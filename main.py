@@ -24,7 +24,7 @@ class Consulta(BaseModel):
 
 @app.post("/consulta/")
 async def respuesta(datos: Consulta):
-    resultado = modelo(preg = datos.pregunta, context = datos.contexto)
+    resultado = modelo(question = datos.pregunta, context = datos.contexto)
 
     print('////////////////77',resultado,'/////////////////////')
 
