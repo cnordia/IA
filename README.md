@@ -1,0 +1,2 @@
+Esta IA podrá ser implementada sobre todo en webs en las cuales le podremos pasar un contexto para que los usuarios puedan
+preguntar temas sobre la misma web a la cual le proporcionaremos un contexto, y este.

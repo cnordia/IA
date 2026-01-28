@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Lector de Textos</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>🤖 Pregúntale a la IA</h1>
+            <p>Pega un texto y haz una pregunta sobre él.</p>
+        </header>
+
+        <section class="input-section">
+            <label for="contexto">Texto / Contexto:</label>
+            <textarea id="contexto" placeholder="Pega aquí el artículo, noticia o texto largo..."></textarea>
+
+            <label for="pregunta">Tu Pregunta:</label>
+            <input type="text" id="pregunta" placeholder="Ej: ¿Quién es el protagonista?">
+            
+            <button id="btn-buscar">🔍 Buscar Respuesta</button>
+            <p id="mensaje-error" class="error-msg"></p>
+        </section>
+
+        <section id="resultado-section" class="hidden">
+            <div class="card">
+                <h3>Respuesta:</h3>
+                <p id="respuesta-texto" class="respuesta-highlight">...</p>
+                
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

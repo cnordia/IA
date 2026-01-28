@@ -1,0 +1,63 @@
+/* Reset básico y fuente bonita */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 { color: #2c3e50; text-align: center; margin-bottom: 5px; }
+header p { text-align: center; color: #7f8c8d; margin-bottom: 25px; }
+
+/* Inputs y Textarea */
+label { font-weight: bold; display: block; margin-top: 15px; color: #34495e; }
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Para que el padding no rompa el ancho */
+    font-size: 14px;
+}
+
+textarea { height: 150px; resize: vertical; }
+
+/* Botón */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #2980b9; }
+button:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+
+/* Resultados */
+.hidden { display: none; }
+.card {
+    background: #e8f6f3;
+    padding: 20px;
+    margin-top: 25px;
+    border-left: 5px solid #1abc9c;
+    border-radius: 4px;
+}
+.respuesta-highlight { font-size: 1.2em; color: #16a085; font-weight: bold; }
+
